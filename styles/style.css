@@ -135,6 +135,9 @@ table {
 }
 
 /* End of reset */
+
+/* Navigation bar */
+
 img {
     max-width: 100%;
     height: auto;
@@ -245,11 +248,59 @@ nav a:active {
         position: fixed;
         display: block;
         top: 5px;
-        right: 0.5rem;
+        right: 5px;
         cursor: pointer;
     }
 }
 
 #start {
     height: calc(100dvh - 5rem);
+}
+
+/* About Start */
+#start .tagline {
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#start {
+    background: url(../images/modern-white-chair-object.png) no-repeat;
+    margin: 0 5%;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-content: center;
+    position: relative;
+    /* for positioning the controls at bottom */
+}
+
+#start .tagline-extended {
+    width: 40%;
+}
+
+#start .controls {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    /* align-self: stretch; */
+    position: absolute;
+    bottom: 15px;
+    /* for placing the controls at bottom */
+    right: 0;
+}
+
+.oval-btn {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.controls .oval-btn {
+    margin-right: 2rem;
+    white-space: nowrap;
+    font-size: min(4vw, 19px);
+    text-decoration: none;
 }
