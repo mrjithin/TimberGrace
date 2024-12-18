@@ -477,7 +477,7 @@ nav ul a:active {
 .scroller {
     flex: 1;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: visible;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 
@@ -490,6 +490,7 @@ nav ul a:active {
         display: inline-block;
         width: 33%;
         background-color: white;
+        transition: transform 0.3s ease-in-out;
     }
 
     h3 {
@@ -523,3 +524,13 @@ nav ul a:active {
         }
     }
 }
+
+.scroller .cards:hover,
+.scroller .cards:active {
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+/* TODO: Prevent the vertical scroll bar from appearing when hovering */
+/* TODO: Add a shadow to the cards */
+/* TODO: Make the dining room etc buttons to scroll to the right element even on bigger screens */
+/* TODO: Add left and right scroll icons */
