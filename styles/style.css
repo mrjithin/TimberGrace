@@ -340,7 +340,7 @@ nav ul a:active {
 #about-extra {
     box-sizing: border-box;
     padding-top: 5rem;
-    height: 100dvh;
+    min-height: 100dvh;
     margin: 0 5%;
     display: flex;
     justify-content: space-between;
@@ -410,8 +410,8 @@ nav ul a:active {
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
+    min-height: 170px;
     height: 9%;
-    flex-shrink: 1;
 }
 
 #collection .header span {
@@ -463,7 +463,7 @@ nav ul a:active {
     }
 
     #collection .header {
-        height: 30%;
+        height: 40%;
     }
 
     #collection .choices {
