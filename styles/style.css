@@ -109,6 +109,7 @@ section {
 
 body {
     line-height: 1;
+    width: 100%;
 }
 
 ol,
@@ -246,10 +247,5 @@ nav a:active {
 }
 
 #start {
-    height: calc(100vh - 5rem);
-}
-
-#about {
-    height: calc(200vh - 10rem);
-
+    height: calc(100dvh - 5rem);
 }
