@@ -376,6 +376,23 @@ nav ul a:active {
     font-size: min(3.5vw, 17px);
 }
 
+@media (max-width: 798px) {
+    #about-extra {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-extra .img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #about-extra .text {
+        width: 100%;
+    }
+}
+
 /* Collections */
 #collection {
     box-sizing: border-box;
