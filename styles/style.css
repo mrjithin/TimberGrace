@@ -393,7 +393,7 @@ nav ul a:active {
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    height: 15%;
+    height: 9%;
 }
 
 #collection .header span {
@@ -442,12 +442,47 @@ nav ul a:active {
     }
 
     #collection .header {
-        height: 35%;
+        height: 30%;
     }
 
     #collection .choices {
         flex-direction: column;
         align-items: center;
         flex: 1;
+    }
+}
+
+/* Scrolling */
+.scroller {
+    flex: 1;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    .cards {
+        display: inline-block;
+        width: 33%;
+    }
+}
+
+@media (max-width: 946px) {
+    .scroller {
+        .cards {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .scroller {
+        .cards {
+            width: 100%;
+        }
     }
 }
