@@ -144,6 +144,7 @@ html {
 
 img {
     max-width: 100%;
+    display: inline-block;
     height: auto;
 }
 
@@ -176,14 +177,17 @@ nav {
     /* for blurring contents behind the nav bar */
 }
 
-#about {
+/* #about {
     margin-top: 5rem;
-}
+} */
 
-.logo h1 {
+.logo h1 a {
+    display: inline-block;
     font-size: 1.5rem;
     font-weight: 800;
     padding: 1rem;
+    text-decoration: none;
+    color: #432818;
 }
 
 .nav-links {
@@ -199,7 +203,7 @@ nav {
     margin-right: 1rem;
 }
 
-nav a {
+nav ul a {
     text-decoration: none;
     color: #432818;
     font-size: 1.2rem;
@@ -210,8 +214,8 @@ nav a {
     border-radius: 0.5rem;
 }
 
-nav a:hover,
-nav a:active {
+nav ul a:hover,
+nav ul a:active {
     color: #99582A;
     background-color: #b9a16667;
     border-radius: 0.5rem;
@@ -263,7 +267,9 @@ nav a:active {
 
 /* About Start */
 #start {
-    height: calc(100dvh - 5rem);
+    box-sizing: border-box;
+    padding-top: 5rem;
+    height: 100dvh;
     background: url(../images/modern-white-chair-object.png) no-repeat;
     margin: 0 5%;
     background-position: center center;
@@ -320,7 +326,6 @@ nav a:active {
     margin-right: 2rem;
     white-space: nowrap;
     font-size: min(4vw, 19px);
-    text-decoration: none;
 }
 
 .controls .arrow-down {
@@ -333,7 +338,53 @@ nav a:active {
 /* About Extra */
 
 #about-extra {
-    height: calc(100dvh - 5rem);
+    box-sizing: border-box;
+    padding-top: 5rem;
+    height: 100dvh;
     margin: 0 5%;
-    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+#about-extra .img {
+    width: 40%;
+}
+
+#about-extra .img img {
+    width: 100%;
+    height: auto;
+}
+
+#about-extra .text {
+    width: 50%;
+}
+
+#about-extra .text h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#about-extra .text h2 span {
+    font-weight: 800;
+}
+
+#about-extra .oval-btn {
+    margin-top: 2rem;
+    white-space: nowrap;
+    font-size: min(3.5vw, 17px);
+}
+
+/* Collections */
+#collection {
+    box-sizing: border-box;
+    padding-top: 5rem;
+    height: 100dvh;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#collection
