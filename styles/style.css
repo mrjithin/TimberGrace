@@ -109,7 +109,6 @@ section {
 
 body {
     line-height: 1;
-    width: 100%;
 }
 
 ol,
@@ -136,6 +135,11 @@ table {
 }
 
 /* End of reset */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: "Source Sans 3", serif;
     background-color: #FFE6A7;
