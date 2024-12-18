@@ -154,11 +154,102 @@ h6 {
 nav {
     display: flex;
     justify-content: space-between;
+    font-family: "Montserrat", serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#about {
+    margin-top: 5rem;
 }
 
 .logo h1 {
     font-size: 1.5rem;
     font-weight: 800;
     padding: 1rem;
-    min-width: 200px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 40%;
+    flex: 1;
+}
+
+.hamburger {
+    display: none;
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #432818;
+    font-size: 1.2rem;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.5rem 0.3rem;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+nav a:hover,
+nav a:active {
+    color: #99582A;
+    background-color: #b9a16667;
+    border-radius: 0.5rem;
+}
+
+.signup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.signup button {
+    background-color: inherit;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 968px) {
+    .nav-links {
+        display: none;
+    }
+
+    .signup {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger {
+        position: fixed;
+        display: block;
+        top: 5px;
+        right: 0.5rem;
+        cursor: pointer;
+    }
+}
+
+#start {
+    height: calc(100vh - 5rem);
+}
+
+#about {
+    height: calc(200vh - 10rem);
+
 }
