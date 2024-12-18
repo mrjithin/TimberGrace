@@ -394,6 +394,7 @@ nav ul a:active {
     display: flex;
     justify-content: space-between;
     height: 9%;
+    flex-shrink: 1;
 }
 
 #collection .header span {
@@ -415,7 +416,7 @@ nav ul a:active {
     box-sizing: border-box;
     width: min(30%, 150px);
     white-space: nowrap;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -427,7 +428,7 @@ nav ul a:active {
 
     #collection h2 {
         width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 0.7rem;
     }
 
     #collection .header {
