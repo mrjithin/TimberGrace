@@ -411,12 +411,15 @@ nav ul a:active {
     width: 50%;
 }
 
-#collection .choices button {
+#collection .choices a {
+    box-sizing: border-box;
     width: min(30%, 150px);
     white-space: nowrap;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
-@media (max-width: 845px) {
+@media (max-width: 1025px) {
     #collection .header {
         flex-direction: column;
         align-items: space-between;
@@ -436,8 +439,8 @@ nav ul a:active {
     }
 }
 
-@media (max-width: 451px) {
-    #collection .choices button {
+@media (max-width: 536px) {
+    #collection .choices a {
         width: 40%;
     }
 
@@ -468,6 +471,22 @@ nav ul a:active {
     .cards {
         display: inline-block;
         width: 33%;
+        background-color: white;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+        margin: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid black;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
     }
 }
 
