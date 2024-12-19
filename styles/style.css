@@ -490,7 +490,7 @@ nav ul a:active {
         display: inline-block;
         width: 33%;
         background-color: white;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
     h3 {
@@ -528,11 +528,108 @@ nav ul a:active {
 .scroller .cards:hover,
 .scroller .cards:active {
     transform: scale3d(1.05, 1.05, 1.05);
+    box-shadow: 10px 10px 10px 2px #432818aa;
 }
 
 /* TODO: Prevent the vertical scroll bar from appearing when hovering */
-/* TODO: Add a shadow to the cards */
 /* TODO: Make the dining room etc buttons to scroll to the right element even on bigger screens */
 /* TODO: Make smooth transition when using dining room etc buttons */
 /* TODO: Add left and right scroll icons */
 /* TODO: Make the Cart an svg */
+
+/* Quality */
+
+#quality {
+    box-sizing: border-box;
+    padding-top: 5rem;
+    min-height: 100dvh;
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+
+    .subtext {
+        width: 45%;
+    }
+
+    img {
+        width: 40%;
+        height: auto;
+        max-width: 340px;
+    }
+}
+
+#quality h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    width: 40%;
+
+    span {
+        font-weight: 800;
+    }
+}
+
+.quality-cards {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+
+    .svg {
+        display: inline-block;
+        width: 5%;
+    }
+
+    li:first-child {
+        margin-top: 1rem;
+    }
+
+    li {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1.5px solid #89461f;
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: inline-block;
+            width: 89%;
+            /* margin-bottom: 1rem; */
+            /* Add margin when displaying content of each quality */
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #quality img {
+        width: 80%;
+        margin: 1rem;
+    }
+
+    #quality .quality-cards {
+        width: 100%;
+    }
+}
+
+@media (max-width: 441px) {
+    #quality h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #quality .subtext {
+        width: 100%;
+    }
+}
