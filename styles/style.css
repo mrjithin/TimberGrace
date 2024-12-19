@@ -536,6 +536,8 @@ nav ul a:active {
 /* TODO: Make smooth transition when using dining room etc buttons */
 /* TODO: Add left and right scroll icons */
 /* TODO: Make the Cart an svg */
+/* TODO: Make the navbar work on mobile */
+/* TODO: Make the quality section down arrow work*/
 
 /* Quality */
 
@@ -582,6 +584,12 @@ nav ul a:active {
     .svg {
         display: inline-block;
         width: 5%;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .svg:hover {
+        transform: scale(1.2);
     }
 
     li:first-child {
@@ -630,6 +638,58 @@ nav ul a:active {
     }
 
     #quality .subtext {
+        width: 100%;
+    }
+}
+
+/* Making */
+
+#making {
+    box-sizing: border-box;
+    background-color: #432818;
+    padding: 0 5%;
+    padding-top: 5rem;
+    min-height: 100dvh;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    h2 {
+        color: white;
+        font-size: min(2.2rem, 6vw);
+        font-weight: 600;
+        margin-bottom: 2rem;
+        width: 100%;
+
+        span {
+            font-weight: 800;
+        }
+    }
+
+    .subtext {
+        width: 45%;
+        color: #dfac2d;
+    }
+
+    img {
+        width: 40%;
+        height: auto;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 853px) {
+    #making img {
+        width: 80%;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+
+    #making .subtext {
         width: 100%;
     }
 }
